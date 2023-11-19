@@ -28,10 +28,30 @@ body {
 .container .content .left-side {
     width: 25%;
     height: 100%;
+    position: relative;
+}
+.content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
 }
 .content .left-side .details {
     margin: 14px;
     text-align: center;
+}
+.content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+}
+.content .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
 }
 .container .content .right-side {
     width: 75%;
